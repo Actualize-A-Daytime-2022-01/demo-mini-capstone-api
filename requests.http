@@ -49,15 +49,10 @@ Content-Type: application/json
   "password": "password"
 }
 
-### Order create (login)
+### Order create
 POST http://localhost:3000/orders.json
 Content-Type: application/json
 Authorization: Bearer {{jwt}}
-
-{
-  "product_id": 10,
-  "quantity": 200
-}
 
 ### ORDERS SHOW
 GET http://localhost:3000/orders/1.json
