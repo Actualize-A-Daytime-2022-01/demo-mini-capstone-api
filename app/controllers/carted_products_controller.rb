@@ -8,7 +8,7 @@ class CartedProductsController < ApplicationController
       status: "carted"
     )
     @carted_product.save
-    render json: @carted_product
+    render template: "carted_products/show"
   end
 
   def index
